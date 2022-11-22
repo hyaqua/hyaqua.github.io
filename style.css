@@ -1,0 +1,175 @@
+* {
+    margin: 0; 
+    padding: 0;
+}
+:root {
+    --main-bg-color: #734720;
+    --title-bg-color: bisque;
+    --post-bg-color: #e0b284;
+    --top-bottom-color: #212121;
+    --photo-border-color: #0a0806;
+    --top-bottom-text: wheat;
+}
+body#body {
+    background-color: var(--main-bg-color);
+}
+div#banner { 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    background-color: var(--top-bottom-color); 
+    width: 100%; 
+    height: auto;
+}
+div#banner-content { 
+    font-family: 'Segoe UI'; 
+    color: var(--top-bottom-text);
+    margin: 0 auto; 
+    padding: 10px; 
+    padding-top: 20px;
+    border: 1px solid var(--top-bottom-color);
+}
+div#main-content {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Roasted_coffee_beans.jpg/1200px-Roasted_coffee_beans.jpg);
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+}
+div#title-content {
+    padding-top: 20px; 
+    margin: auto;
+}
+div#photo-div {
+    float: left;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    margin-right: 20px;
+    
+}
+div#toc_container {
+    background-color: var(--title-bg-color);
+    margin: auto;
+    align-self: center;
+}
+img#photo {
+    max-height: 200px;
+    max-width: 200px;
+    height: auto;
+    width: auto;
+    float: left;
+    border-color: var(--photo-border-color);
+    border-width: 5px;
+    border-style: solid;
+     margin-right: 10 px;
+}
+
+div#blog-title {
+    padding-right: 10px;
+    align-self: flex-start;
+}
+ul#list_contents {
+  list-style-position: inside;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+a#link {
+    color: var(--photo-border-color);
+    text-decoration: underline;
+}
+div#paragraph {
+    border: 1px solid black;
+    background-color: var(--post-bg-color);
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    width: 70%;
+    text-align: justify;
+    flex-direction: row;
+}
+.paragraph {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center; /* Vertically align to center */
+    flex-direction: row; /* Put items side by side of each other */
+}
+h1 { 
+    text-align: center;
+    text-decoration-line:underline;
+    text-decoration-color: black;
+    text-shadow: 2px 2px 5px grey;
+}
+p1#menu {
+    color: var(--post-bg-color);
+    text-shadow: 2px 2px var(--main-bg-color);
+}
+div#bottom_bar {
+    background-color: var(--top-bottom-color); 
+    width: 100%; 
+    height: auto;
+    text-align: right;
+    font-family: 'Segoe UI'; 
+    color: var(--top-bottom-text);
+    padding-top: 15px;
+    margin-top: 30px;
+}
+
+.text { 
+    
+    padding-left:20px;
+    padding-right:20px;
+}
+
+.movingphoto { /* Moving photo style */
+    border: 1px solid black;
+    align-self: center;
+    background-color: var(--post-bg-color);
+    display: flex;
+    align-items: center; /* Vertically align to center */
+    flex-direction: row; /* Put items side by side of each other */
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 70%; 
+    height: auto;
+}
+.caption {
+    display: none;
+    width: 0%;
+    padding: 20px;
+}
+.movedphoto {
+    position: static;
+    width: 100%;
+    float: left;
+}
+.photo {
+    border-width: 5px;
+    border-color: var(--photo-border-color);
+    border-style: solid;
+}
+
+.movingphoto:hover .caption { /* Show text on hover and animate it*/
+    display: block;
+    animation: grow 2s ease 0s 1 normal;
+    animation-fill-mode: forwards;
+}
+.movingphoto:hover .movedphoto {
+    animation: shrink 2s ease 0s 1 normal;
+    animation-fill-mode: forwards;
+}
+
+@keyframes grow{
+    0% {width: 0%;}
+    100% {width: 50%;}
+}
+@keyframes shrink{
+    0% {width:100%;}
+    100% {
+        width: 50%;
+        margin: 20px;
+    }
+}
