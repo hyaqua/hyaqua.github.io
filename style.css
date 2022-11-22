@@ -135,41 +135,28 @@ div#bottom_bar {
     margin-bottom: 20px;
     width: 70%; 
     height: auto;
+    overflow: hidden;
 }
 .caption {
-    display: none;
-    width: 0%;
+    display: block;
+    position: relative;
     padding: 20px;
+    min-width: calc( 50% - 40px );
 }
 .movedphoto {
-    position: static;
-    width: 100%;
-    float: left;
+    position: relative;
+    min-width: 100%;
+    transition: 1s ease-in-out;
+    transition-property: min-width, padding;
 }
 .photo {
     border-width: 5px;
     border-color: var(--photo-border-color);
     border-style: solid;
+    width: calc( 100% - 10px );
 }
 
-.movingphoto:hover .caption { /* Show text on hover and animate it*/
-    display: block;
-    animation: grow 2s ease 0s 1 normal;
-    animation-fill-mode: forwards;
-}
 .movingphoto:hover .movedphoto {
-    animation: shrink 2s ease 0s 1 normal;
-    animation-fill-mode: forwards;
-}
-
-@keyframes grow{
-    0% {width: 0%;}
-    100% {width: 50%;}
-}
-@keyframes shrink{
-    0% {width:100%;}
-    100% {
-        width: 50%;
-        margin: 20px;
-    }
+    min-width: calc( 50% - 40px );
+    padding: 20px;
 }
