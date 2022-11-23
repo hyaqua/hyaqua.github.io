@@ -60,7 +60,7 @@ img#photo {
     border-color: var(--photo-border-color);
     border-width: 5px;
     border-style: solid;
-     margin-right: 10 px;
+    margin-right: 10 px;
 }
 
 div#blog-title {
