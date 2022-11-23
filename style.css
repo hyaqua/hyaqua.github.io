@@ -53,7 +53,6 @@ div#toc_container {
     align-self: center;
 }
 img#photo {
-    max-height: 200px;
     max-width: 200px;
     height: auto;
     width: auto;
@@ -101,6 +100,7 @@ h1 {
     text-decoration-line:underline;
     text-decoration-color: black;
     text-shadow: 2px 2px 5px grey;
+    padding-right: 200px;
 }
 p1#menu {
     color: var(--post-bg-color);
