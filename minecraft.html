@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<head>
+  <title>PP CLUB - Minecraft</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./minecraft/minecraft.css">
+  <link rel="icon" type="image/x-icon" href="https://freepngimg.com/download/coffee/31398-5-coffee-logo-image.png">
+</head>
+<!-- CODE STARTS HERE-->
+<body id="body">
+  <div id="banner">
+    <div id="banner-content">
+      <p1 class="title">PPCLUB CAFÉ</p1>
+    </div>
+  </div>
+  <div id="main-content">
+    <div id="title-content">
+      <center>
+        <p1 id="menu" style="font-size: 5vw;">Minecraft Game</p1>
+      </center>
+    </div>
+    
+    <!-- TOC start -->    
+    <div id="toc_container">
+      <center>
+      <ul id="list_contents">
+          <font size="+2">
+            <li><a id="link" href="index.html">Back to Menu</a></li>
+            <li><a id="link" href="#minecraft-game">Play Minecraft</a></li>
+            <li><a id="link" href="#game-instructions">Game Instructions</a></li>
+          </font>
+        </ul>
+      </center>
+    </div>
+    <!-- TOC end -->
+  </div>
+
+  <!-- Minecraft Game Section -->
+  <div id="paragraph">
+    <div class="minecraft-container">
+      <h1 id="minecraft-game" class="minecraft-title">Coffee Minecraft</h1>
+      <div class="minecraft-description">
+        <p>Welcome to Coffee Minecraft! Mine blocks, collect resources, and build your own coffee world!</p>
+      </div>
+      
+      <canvas id="minecraft-canvas" width="600" height="400"></canvas>
+      
+      <div id="minecraft-inventory">
+        <div>Inventory:</div>
+        <div>Dirt: 0</div>
+        <div>Stone: 0</div>
+        <div>Wood: 0</div>
+        <div>Coffee: 0</div>
+      </div>
+      
+      <div id="game-instructions" class="minecraft-controls">
+        <h3>Game Controls</h3>
+        <ul>
+          <li><strong>W/Up Arrow:</strong> Move Up</li>
+          <li><strong>S/Down Arrow:</strong> Move Down</li>
+          <li><strong>A/Left Arrow:</strong> Move Left</li>
+          <li><strong>D/Right Arrow:</strong> Move Right</li>
+          <li><strong>Space:</strong> Mine nearest block</li>
+          <li><strong>Click:</strong> Mine/Place block</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom Black Bar-->
+  <div id="bottom_bar">
+    <p1 style="padding-right:20px">MEMBERS</p1> <br>
+    <p2 style="padding-right:20px">JONAS, AKVILĖ, JEKATERINA, GABIJA</p2><br>
+    <p3 style="padding-right:20px">©2022</p3>
+  </div>
+
+  <!-- Load the Minecraft game script -->
+  <script src="./minecraft/minecraft.js"></script>
+</body>
+</html>
